@@ -1,0 +1,272 @@
+/* Reset & Base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #eef2f5;
+}
+
+input, select, textarea, button {
+  font-family: inherit;
+}
+
+/* Login / Signup Page Container */
+.login-page {
+  max-width: 400px;
+  margin: 60px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Heading */
+.login-page h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Inputs */
+.login-page input,
+.login-page select {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+/* Button */
+.login-page button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.login-page button:hover {
+  background-color: #0056b3;
+}
+
+/* Logout Button (Top-right inside form) */
+.login-page .logout-btn {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.login-page .logout-btn:hover {
+  background-color: #a71d2a;
+}
+.form-switch {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.form-switch span {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.form-switch span:hover {
+  text-decoration: underline;
+}
+
+.employee-dashboard.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.employee-dashboard h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.employee-dashboard form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.employee-dashboard select,
+.employee-dashboard textarea,
+.employee-dashboard button {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.employee-dashboard button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.employee-dashboard button:hover {
+  background-color: #0056b3;
+}
+.employee-dashboard .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.employee-dashboard .logout-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.employee-dashboard .logout-btn:hover {
+  background-color: #a71d2a;
+}
+.admin-dashboard.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-dashboard .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.admin-dashboard .logout-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.admin-dashboard input,
+.admin-dashboard textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.admin-dashboard .checkbox-group {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.admin-dashboard button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.admin-dashboard button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.manager-dashboard.container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.manager-dashboard .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.manager-dashboard .logout-btn {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.manager-dashboard .no-data {
+  text-align: center;
+  margin-top: 40px;
+  color: #666;
+}
+
+.manager-dashboard .request-list {
+  list-style: none;
+  padding: 0;
+}
+
+.manager-dashboard .request-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.manager-dashboard .action-btns {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.manager-dashboard .approve-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.manager-dashboard .reject-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
