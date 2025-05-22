@@ -12,7 +12,7 @@ export default function SignupPage() {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8080/api/auth/signup', {
+      await axios.post('https://backend-3-d6a8.onrender.com/api/auth/signup', {
         username,
         password,
         role,

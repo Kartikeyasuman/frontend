@@ -15,7 +15,7 @@ export default function ManagerDashboard() {
   const fetchRequests = async () => {
     try {
       const token = localStorage.getItem('token');
-      const res = await axios.get('http://localhost:8080/api/requests?status=Pending', {
+      const res = await axios.get('https://backend-3-d6a8.onrender.com/api/requests?status=Pending', {
         headers: { Authorization: token }
       });
       setRequests(res.data);
@@ -27,7 +27,7 @@ export default function ManagerDashboard() {
   const handleDecision = async (id, decision) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.patch(`http://localhost:8080/api/requests/${id}`, { status: decision }, {
+      await axios.patch(`https://backend-3-d6a8.onrender.com/api/requests/${id}`, { status: decision }, {
         headers: { Authorization: token }
       });
       setRequests((prev) => prev.filter((req) => req.id !== id));

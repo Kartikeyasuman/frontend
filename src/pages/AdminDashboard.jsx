@@ -27,7 +27,7 @@ export default function AdminDashboard() {
     try {
       const token = localStorage.getItem('token');
       await axios.post(
-        'http://localhost:8080/api/software',
+        'https://backend-3-d6a8.onrender.com/api/software',
         {
           name,
           description,

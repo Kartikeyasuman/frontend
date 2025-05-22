@@ -18,7 +18,7 @@ export default function EmployeeDashboard() {
   useEffect(() => {
     const fetchSoftwares = async () => {
       try {
-        const res = await axios.get('http://localhost:8080/api/software');
+        const res = await axios.get('https://backend-3-d6a8.onrender.com/api/software');
         setSoftwares(res.data);
       } catch (err) {
         alert('Failed to fetch software list');
@@ -31,7 +31,7 @@ export default function EmployeeDashboard() {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      await axios.post('http://localhost:8080/api/requests', {
+      await axios.post('https://backend-3-d6a8.onrender.com/api/requests', {
         softwareId: selectedSoftware,
         accessType,
         reason
